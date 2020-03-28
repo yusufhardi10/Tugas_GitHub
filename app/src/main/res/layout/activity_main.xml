@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kuning_muda"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TableLayout
+                android:layout_width="372dp"
+                android:layout_height="872dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="85dp"
+                android:background="@color/hijau">
+
+                <TextView
+                    android:id="@+id/pendaftaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/pendaftaran"
+                    android:textAlignment="center"
+                    android:textColor="@color/abu_abu"
+                    android:textSize="35sp"
+                    android:textStyle="italic" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/nama_depan"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:ems="10"
+                            android:hint="@string/nama_depan"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/abu_abu"></EditText>
+
+                        <EditText
+                            android:id="@+id/nama_belakang"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:ems="10"
+                            android:hint="@string/nama_belakang"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/abu_abu"></EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/tempat_lahir"
+                            android:layout_width="155dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:ems="10"
+                            android:hint="@string/tempat_lahir"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/abu_abu"></EditText>
+
+                        <EditText
+                            android:id="@+id/tanggal_lahir"
+                            android:layout_width="215dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:ems="10"
+                            android:hint="@string/tanggal_lahir"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/abu_abu"></EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/alamat"
+                            android:layout_width="370dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:ems="10"
+                            android:hint="@string/alamat"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/abu_abu"></EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/jenis_kelamin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/jenis_kelamin"
+                            android:textColor="@color/abu_abu"
+                            android:textSize="18sp"
+                            android:textStyle=""></TextView>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/laki-laki"
+                            android:layout_width="180dp"
+                            android:text="@string/laki_laki"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/perempuan"
+                            android:layout_width="180dp"
+                            android:text="@string/perempuan"></RadioButton>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/agama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/agama"
+                            android:textColor="@color/abu_abu"
+                            android:textSize="18sp"
+                            android:textStyle=""></TextView>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/islam"
+                            android:layout_width="180dp"
+                            android:text="@string/islam"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/kristen"
+                            android:layout_width="180dp"
+                            android:text="@string/kristen"></RadioButton>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/katolik"
+                            android:layout_width="180dp"
+                            android:text="@string/katolik"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/hindu"
+                            android:layout_width="180dp"
+                            android:text="@string/hindu"></RadioButton>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/buddha"
+                            android:layout_width="180dp"
+                            android:text="@string/buddha"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/konghucu"
+                            android:layout_width="180dp"
+                            android:text="@string/konghucu"></RadioButton>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/aliran_kepercayaan"
+                            android:layout_width="180dp"
+                            android:text="@string/aliran_kepercayaan"></RadioButton>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/telepon"
+                            android:layout_width="370dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ems="10"
+                            android:hint="@string/telepon"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/abu_abu"></EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/email"
+                            android:layout_width="370dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ems="10"
+                            android:hint="@string/email"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/abu_abu"></EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/password"
+                            android:layout_width="370dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:drawableRight="@drawable/ic_hide_password_24dp"
+                            android:ems="10"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:textColor="@color/abu_abu"></EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/konfirmasi_password"
+                            android:layout_width="370dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:drawableRight="@drawable/ic_hide_password_24dp"
+                            android:ems="10"
+                            android:hint="@string/konfirmasi_password"
+                            android:inputType="textPassword"
+                            android:textColor="@color/abu_abu"></EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/kembali"
+                            android:layout_width="180dp"
+                            android:layout_marginLeft="4dp"
+                            android:background="@android:color/holo_red_dark"
+                            android:text="Kembali"></Button>
+
+                        <Button
+                            android:id="@+id/daftar"
+                            android:layout_width="180dp"
+                            android:layout_marginLeft="3dp"
+                            android:background="@android:color/holo_red_dark"
+                            android:text="Daftar"></Button>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

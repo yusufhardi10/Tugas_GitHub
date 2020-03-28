@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hijau">#81F79F</color>
+    <color name="hijau_tua">#0B6138</color>
+    <color name="merah_muda">#FA5882</color>
+    <color name="abu_abu">#A4A4A4</color>
+    <color name="kuning_muda">#D0FA58</color>
+    <color name="hitam">#000000</color>
+</resources>
